@@ -27,7 +27,7 @@ body{
   }
   
   .card.rain {
-    background: linear-gradient(135deg, #6e7b8d, #44536b); 
+    background: linear-gradient(135deg, #464f5b, #829dca); 
   }
   
   .card.drizzle {
@@ -68,6 +68,7 @@ body{
 .search button img{
     width: 16px;
 }
+
 .weather-icon{
     width: 170px;
     margin: 10px 0 10px 0;
@@ -113,9 +114,25 @@ body{
 }
 .error{
     text-align: left;
-    margin-left: 10px;
-    font-size: 14px;
+    margin-left: 90px;
+    font-size: 30px;
     margin-top: 10px;
     display: none;
+    text-shadow: 1px 1px 20px #000000;
 }
 
+@media (min-width: 576px) {
+    
+}
+@media (min-width: 768px) {
+   
+}
+@media (min-width: 992px) {
+   
+}
+@media (min-width: 1200px) {
+   
+}
+@media (min-width: 2080px) {
+   
+}

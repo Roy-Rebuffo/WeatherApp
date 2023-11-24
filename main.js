@@ -7,6 +7,7 @@ const card$$ = document.querySelector('.card');
 
 
 
+
 async function checkWeather(city) {
   const response = await fetch(baseUrl + city + `&appid=${apiKey}`);
   if (response.status == 404) {
@@ -20,12 +21,15 @@ async function checkWeather(city) {
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
+    // Limpiar clases existentes
+    card$$.classList.remove("clouds", "clear", "rain", "drizzle", "mist");
+
     if (data.weather[0].main == "Clouds") {
       weatherIcon$$.src = "assets/clouds.png";
       card$$.classList.add("clouds");
     } else if (data.weather[0].main == "Clear") {
-        weatherIcon$$.src = "assets/clear.png";
-        card$$.classList.add("clear");
+      weatherIcon$$.src = "assets/clear.png";
+      card$$.classList.add("clear");
     } else if (data.weather[0].main == "Rain") {
       weatherIcon$$.src = "assets/rain.png";
       card$$.classList.add("rain");
@@ -40,6 +44,7 @@ async function checkWeather(city) {
     document.querySelector(".error").style.display = "none";
   }
 }
+
 
 searchBtn$$.addEventListener("click", () => {
   checkWeather(searchBox$$.value);
