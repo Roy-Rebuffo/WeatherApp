@@ -49,7 +49,7 @@ body{
     width: 16px;
 }
 .weather-icon{
-    width: 200px;
+    width: 100px;
     margin: 10px 0 10px 0;
 }
 .weather h1{
@@ -60,4 +60,12 @@ body{
     font-size: 35px;
     font-weight: 400;
     margin-top: -5px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 0 20px;
+    margin-top: 50px;
 }
