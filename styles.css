@@ -18,6 +18,26 @@ body{
     padding: 40px 35px;
     text-align: center;
 }
+.card.clouds {
+    background: linear-gradient(135deg, #808080, #5b548a); 
+  }
+  
+  .card.clear{
+    background: linear-gradient(0deg, rgba(200,242,242,1) 10%, rgba(228,178,37,1) 100%);
+  }
+  
+  .card.rain {
+    background: linear-gradient(135deg, #6e7b8d, #44536b); 
+  }
+  
+  .card.drizzle {
+    background: linear-gradient(135deg, #aab7c4, #7b8a9d); 
+  }
+  
+  .card.mist {
+    background: rgb(235,235,235);
+    background: linear-gradient(175deg, rgba(235,235,235,1) 0%, rgba(160,160,160,1) 100%);
+  }
 .search{
     width: 100%;
     align-items: center;
@@ -55,11 +75,13 @@ body{
 .weather h1{
     font-size: 80px;
     font-weight: 500;
+    text-shadow: 1px 1px 20px #000000;
 }
 .weather h2{
     font-size: 35px;
     font-weight: 400;
     margin-top: -5px;
+    text-shadow: 1px 1px 10px #000000;
 }
 .details{
     display: flex;
@@ -81,6 +103,10 @@ body{
 .humidity, .wind{
     font-size: 28px;
     margin-top: -6px;
+    text-shadow: 1px 1px 20px #000000;
+}
+.info-text{
+    text-shadow: 1px 1px 20px #000000;
 }
 .weather{
     display: none;
@@ -92,3 +118,4 @@ body{
     margin-top: 10px;
     display: none;
 }
+
