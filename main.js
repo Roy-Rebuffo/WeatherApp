@@ -10,6 +10,7 @@ const card$$ = document.querySelector('.card');
 
 async function checkWeather(city) {
   const response = await fetch(baseUrl + city + `&appid=${apiKey}`);
+  console.log(response)
   if (response.status == 404) {
     document.querySelector(".error").style.display = "block";
     document.querySelector(".weather").style.display = "none";
